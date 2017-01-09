@@ -1,0 +1,81 @@
+body {
+  font-family: 'Cutive', serif;
+}
+
+header {
+  height: 180px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo{
+  width: 60%;
+}
+
+/* Nav */
+
+.navbar {
+  background-color: #121212;
+  height: 100px;
+  border: 1px solid orange;
+  margin: 0 auto;
+}
+
+.nav a {
+  color: #121212;
+  background-color: white;
+}
+
+/* Jumbo */
+.jumbo {
+  background: url(../images/new.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  width:100%;
+}
+.jumbo h1{
+  text-align: center;
+  color: black;
+  font-size: 54px;
+}
+
+/* Project Display Section */
+.project-display {
+  background-color: #313131;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
+
+.project-display p {
+  margin-top: 15px;
+}
+
+.projects {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #313131;
+  color: white;
+  height: 300px;
+  margin: 0;
+  padding: 100px;
+}
+
+.footer h1 {
+  margin: 0;
+}
+
+@media (max-width: 750px){
+  header{
+    height: 100px;
+  }
+}
