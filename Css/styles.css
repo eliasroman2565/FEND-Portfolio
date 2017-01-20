@@ -1,9 +1,15 @@
+html {
+  font-family: 'Inconsolata', monospace !important;
+  height: 100%;
+}
+
 body {
-  font-family: 'Cutive', serif;
+
+  height: 100%;
 }
 
 header {
-  height: 180px;
+  height: 20%;
   background-color: black;
   display: flex;
   align-items: center;
@@ -11,30 +17,56 @@ header {
 
 /* Logo */
 .logo{
-  width: 60%;
+  width: 50%;
 }
 
 /* Nav */
 
-.navbar {
-  background-color: #121212;
-  height: 100px;
-  border: 1px solid orange;
-  margin: 0 auto;
+.navigate {
+  background-color: #313131;
+  text-align: center;
+  height: 10%;
+  display: flex;
+  align-items: center;
+
 }
 
-.nav a {
-  color: #121212;
-  background-color: white;
+.navigate ul {
+  list-style-type: none;
+  padding: 0;
+
+
 }
 
+.navigate li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navigate a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  color: black;
+  font-size: 26px;
+  border-radius: 5px;
+  font-weight: 500;
+
+}
+
+.navigate a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #313131;
+}
 /* Jumbo */
 .jumbo {
   background: url(../images/new.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 60%;
   text-align: center;
   width:100%;
 }
@@ -60,12 +92,37 @@ header {
   text-align: center;
 }
 
+/* Skills */
+
+#skills {
+  text-align: center;
+  background-color: #cccccc;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.skills-logo {
+  height: 100px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#skills-list {
+  padding: 0;
+}
+
+#skills-list li {
+  list-style-type: none;
+}
+
 /* Footer */
 .footer {
   text-align: center;
   background-color: #313131;
   color: white;
-  height: 300px;
+  height: 40%;
   margin: 0;
   padding: 100px;
 }
@@ -74,8 +131,31 @@ header {
   margin: 0;
 }
 
-@media (max-width: 750px){
-  header{
-    height: 100px;
+.social {
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 990px){
+  .navigate {
+    height: 15%;
+
   }
+  #skills {
+    height: 60%;
+  }
+}
+
+@media (max-width: 750px){
+  .navigate {
+    HEIGHT: 25%;
+  }
+
+  .navigate li {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+
 }
