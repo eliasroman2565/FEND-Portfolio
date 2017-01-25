@@ -6,30 +6,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- For Local Development -->
-
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="Css/styles.css" rel="stylesheet">
-  <!-- For Deployment -->
-  <!--  <link href="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/Css/styles.css" rel="stylesheet">
-    <link href="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/Css/styles.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
 
 </head>
 <body>
   <header>
     <div class="container-fluid">
-        <img src="images/logo-transparent.gif"  class="img-responsive center-block">
+        <img src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/images/logo-transparent.gif"  class="img-responsive center-block">
     </div>
   </header>
   <div class="navigate">
     <div class="container-fluid">
     <ul>
-      <li class = "button"><a href="#">Home</a></li>
-      <li class = "button"><a href="#">Services</a></li>
-      <li class = "button"><a href="#skills">About</a></li>
+      <li class = "button"><a href="#about">About Me</a></li>
+      <li class = "button"><a href="#project-display">Portfolio</a></li>
+      <li class = "button"><a href="#footer">Contact Me</a></li>
 
 
     </div>
@@ -38,14 +33,15 @@
     <div class="container-fluid">
     </div>
   </section>
-  <div class="about">
+  <div id="about">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
+          <h1>About Me</h1>
+          <p>Hello, I'm Elias Roman, a Front-End Developer based out<br> of the Lehigh Valley area in Pennsylvania. I specialize in creating  <br>mobile-first websites and applications for small-businesses such as gyms, restaurants, hair salons, etc.<br> When I am not writing code, you can usually find me in a gym weightlifting on my spare time.</p>
         </div>
         <div class="col-md-6">
-          <h1>About Me</h1>
-          <p>Hello, I'm Elias Roman, a Front-End Developer based out of the Lehigh Valley area in Pennsylvania. I specialize in creating  mobile-first  with small-businesses such as gyms, restaurants, hair salons, etc.
+          <img src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/images/me.jpg" class="center-block img-responsive me">
         </div>
       </div>
     </div>
@@ -65,7 +61,6 @@
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>JQuery</li>
-            <li>Node.JS</li>
             <li>Wordpress</li>
             <li>Squarespace</li>
           </ul>
@@ -74,13 +69,13 @@
 
     </div>
   </div>
-  <section class="project-display">
+  <div id="project-display">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <h3>Online Resume</h3>
-          <img src="http://placehold.it/350x150" class="img-responsive center-block">
-          <p>Project info</p>
+          <h3>Interactive Resume</h3>
+          <a href="#"><img src="images/resume.PNG" class="img-responsive center-block project-img"></a>
+          <p>An interactive resume application that reads your resume content from a JSON file and dynamically displays that content within a provided template. Objects, functions, conditionals, and control structures were used to compose the content that will display on the resume.</p>
         </div>
         <div class="col-md-4">
           <h3>Arcade Game Clone</h3>
@@ -111,29 +106,20 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
 
-  <div class="footer">
-    <div class="row">
+  <div id="footer">
       <div class="containter">
-        <div class="col-md-6">
           <h1>Contact Me<h1>
-          <a href="https://www.facebook.com/eliasdavid.roman"><img src="images/fb.svg" class="social"></a>
-          <a href="https://www.linkedin.com/in/elias-roman-9b96094b"><img src="images/linkedin.svg" class="social"></a>
-          <a href="https://www.instagram.com/elias.roman2565/"><img src="images/instagram.svg" class="social"></a>
-          <a href="https://twitter.com/Roman2565"><img src="images/twitter.svg" class="social"></a>
-        </div>
-        <div class="col-md-6">
+          <a href="https://www.facebook.com/eliasdavid.roman"><img src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/images/fb.svg" class="social"></a>
+          <a href="https://www.linkedin.com/in/elias-roman-9b96094b"><img src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/images/linkedin.svg" class="social"></a>
+          <a href="https://www.instagram.com/elias.roman2565/"><img src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/images/instagram.svg" class="social"></a>
+          <a href="https://twitter.com/Roman2565"><img src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/images/twitter.svg" class="social"></a>
         </div>
       </div>
-    </div>
-    <!-- <h1>Contact</h1>
-    <p>Elias Roman</p>
-    <p>Email: elias.roman2565@gmail.com</p>
-    <p>Phone: 570-452-1873</p>-->
   </div>
-<!--  <script src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/bootstrap/js/jquery-3.1.1.slim.min.js"> </script>
-  <script src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/bootstrap/js/jquery-3.1.1.slim.min.js"> </script>
+  <script src="https://s3.amazonaws.com/aws-website-portfolio-3yyn1/bootstrap/js/jquery-3.1.1.slim.min.js"></script>
 </body>
 </html>
