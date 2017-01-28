@@ -1,10 +1,10 @@
 html {
-  font-family: 'Inconsolata', monospace !important;
+  font-family: 'Inconsolata', monospace;
   height: 100%;
 }
 
 body {
-
+  font-family: 'Inconsolata', monospace;
   height: 100%;
 }
 
@@ -59,6 +59,7 @@ header {
   text-decoration: none;
   color: #fff;
   background-color: #313131;
+  transition: 2s;
 }
 /* Jumbo */
 .jumbo {
@@ -77,14 +78,14 @@ header {
 }
 
 /* Project Display Section */
-.project-display {
+#project-display {
   background-color: #313131;
   text-align: center;
   color: white;
   padding-top: 50px;
 }
 
-.project-display p {
+#project-display p {
   margin-top: 15px;
 }
 
@@ -92,11 +93,27 @@ header {
   text-align: center;
 }
 
-/* Skills */
+.project-img {
+  height: 150px;
+  width:350px;
+}
+
+/* About Me */
+#about {
+  background-color: #848484;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.me {
+  height: 400px;
+}
 
 #skills {
   text-align: center;
-  background-color: #cccccc;
+  background-color: #848484;
   height: 40%;
   display: flex;
   align-items: center;
@@ -118,22 +135,29 @@ header {
 }
 
 /* Footer */
-.footer {
+#footer {
   text-align: center;
   background-color: #313131;
   color: white;
-  height: 40%;
   margin: 0;
   padding: 100px;
 }
 
-.footer h1 {
+#footer h1 {
   margin: 0;
 }
 
-.social {
+.social  {
   height: 100px;
   width: 100px;
+  margin: 20px 20px 20px 20px;
+  background-color: #848484;
+
+}
+
+#footer a:hover .social{
+  background-color: #fff;
+  transition: 2s;
 }
 
 @media (max-width: 990px){
@@ -148,7 +172,7 @@ header {
 
 @media (max-width: 750px){
   .navigate {
-    HEIGHT: 25%;
+    HEIGHT: 30%;
   }
 
   .navigate li {
