@@ -7,6 +7,7 @@ html {
 body {
   font-family: 'Inconsolata', monospace;
   height: 100%;
+  font-size: 16px;
 
 }
 
@@ -22,6 +23,37 @@ header {
 }
 
 /* Nav */
+.navigate{
+  height: 10%;
+  margin: 10px;
+}
+.navLinks{
+list-style-type: none;
+text-align: center;
+margin-top: 5%;
+}
+
+.navLinks ul{
+  padding: 0;
+}
+
+.navLinks li{
+  display: inline-block;
+}
+
+.navLinks li a {
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navLinks li a:hover{
+  transition: 1s;
+  background-color: black;
+  color: white;
+}
 .navbar {
   margin: 0;
 }
@@ -30,7 +62,7 @@ header {
 }
 /* Jumbo */
 .jumbo {
-  background: url(../images/new.jpg);
+  background: url(../images/opt-phil.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -46,32 +78,35 @@ header {
 
 /* Project Display Section */
 #project-display {
-  background-color: #313131;
   text-align: center;
-  color: white;
   padding-top: 50px;
+  background-color: #C0C0C0;
+
 }
 
 #project-display p {
   margin-top: 15px;
 }
 
-.projects {
-  text-align: center;
+.modal-body , .modal-header{
+  color: black;
+}
+
+.project-row{
+  margin: 10%;
 }
 
 .project-img {
-  height: 150px;
-  width:350px;
+  height: 500px;
 }
 
 /* About Me */
 #about {
-  background-color: #fff;
   text-align: center;
   display: flex;
   align-items: center;
   padding: 20px;
+  margin: 30px;
 }
 
 .me {
@@ -115,7 +150,6 @@ header {
 }
 
 #footer a:hover .social{
-  background-color: #fff;
   transition: 2s;
 }
 
@@ -138,6 +172,9 @@ header {
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .project-img{
+    height: 300px;
   }
 
 
