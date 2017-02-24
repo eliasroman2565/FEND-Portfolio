@@ -25,17 +25,19 @@ header {
 /* Nav */
 .navigate{
   height: 10%;
-  margin: 10px;
+  display: flex;
+  align-items: center;
 }
 .navLinks{
 list-style-type: none;
 text-align: center;
-margin-top: 5%;
 }
 
-.navLinks ul{
+ul{
   padding: 0;
+  margin: 0;
 }
+
 
 .navLinks li{
   display: inline-block;
