@@ -65,7 +65,6 @@ ul{
   background-size: cover;
   height: 80%;
   text-align: center;
-  width:100%;
 }
 .jumbo h1{
   text-align: center;
@@ -117,8 +116,7 @@ ul{
 .skills-logo {
   height: 100px;
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
 }
 
 #skills-list {
@@ -135,7 +133,7 @@ ul{
   background-color: #1E1E1E;
   color: white;
   margin: 0;
-  padding: 100px;
+  padding:15px;
 }
 
 #footer h1 {
@@ -145,7 +143,7 @@ ul{
 .social  {
   height: 100px;
   width: 100px;
-  margin: 20px 20px 20px 20px;
+  margin: 20px;
   background-color: #666666;
   border: 1px solid black;
   border-radius: 10px;
@@ -168,18 +166,27 @@ ul{
 }
 
 @media (max-width: 750px){
-  .navigate {
-    HEIGHT: 30%;
+
+  .navigate{
+    height: 8%;
   }
 
   .navigate li {
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: inline-block;
+
   }
   .project-img{
     height: 300px;
   }
+  .social  {
+    height: 50px;
+    width: 50px;
+    margin: 5px 5px 5px 5px;
+    background-color: #666666;
+    display: inline-block;
+    padding: 0;
 
+
+  }
 
 }
